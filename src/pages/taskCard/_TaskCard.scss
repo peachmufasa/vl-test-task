@@ -1,0 +1,32 @@
+.task-card-page {
+  flex: 1;
+}
+
+.button-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-block--left {
+  display: flex;
+  gap: 1em;
+}
+
+.task-card {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #FFFFFF;
+  border: 1px #DFDFDF solid;
+}
+
+.subsection__header {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $text-secondary-col;
+}

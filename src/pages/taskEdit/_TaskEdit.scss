@@ -1,0 +1,38 @@
+.task-edit-page {
+  flex: 1;
+}
+
+.task-edit-form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #FFFFFF;
+  border: 1px #DFDFDF solid;
+}
+
+.title-input {
+  width: 100%;
+  padding: 1em;
+  border: 1px #DFDFDF solid;
+}
+
+.select-input {
+  width: 20em;
+  padding: 1em;
+  border: 1px #DFDFDF solid;
+}
+
+.description-input {
+  width: 100%;
+  padding: 1em;
+  border: 1px #DFDFDF solid;
+}
+
+.submit-button {
+  padding: 1em;
+  color: #FFFFFF;
+  background-color: $ui-primary-col;
+  border-radius: 8px;
+  transition: background-color ease-in-out 0.3s;
+}

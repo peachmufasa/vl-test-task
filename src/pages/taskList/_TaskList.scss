@@ -1,0 +1,114 @@
+.task-list-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+.task-list-block.narrow {
+  flex-direction: column;
+  width: fit-content;
+
+  .filter-section {
+    flex-basis: auto;
+    position: inherit;
+    margin-top: 4em;
+  }
+
+  .filter-block {
+    flex-direction: row;
+    gap: 3em;
+  };
+
+  .list-section button {
+    position: absolute;
+    top: 1.5em;
+  }
+
+}
+
+.filter-section {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: sticky;
+  top: 1.5em;
+  height: fit-content;
+}
+
+.list-section {
+  flex: 1;
+}
+
+.filter-block {
+  padding: 1.5em;
+  background-color: $bg-secondary-col;
+  border: 1px #DFDFDF solid;
+}
+
+.compound {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.filter-header {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $text-secondary-col;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+
+  input {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.3em;
+  }
+}
+
+.task-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.task-item {
+  position: relative;
+  padding: 1em;
+  background-color: $bg-secondary-col;
+  border: 1px #DFDFDF solid;
+
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  a:hover {
+    h2 {
+      color: $ui-primary-col;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: $text-secondary-col;
+    transition: color ease-in-out 0.3s;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
+}
